@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo - Sarom Kids</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff5f8;
+            color: #333;
+        }
+
+        header {
+            background: #ff6fa8;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background: #ffd9e8;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #d6336c;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a61e4d;
+        }
+
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .produto {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .produto img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .produto h3 {
+            color: #d6336c;
+        }
+
+        .produto button {
+            background: #ff6fa8;
+            border: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .produto button:hover {
+            background: #d6336c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Catálogo Sarom Kids</h1>
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="#">Promoções</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+</nav>
+
+<section class="catalogo">
+    <div class="produto">
+        <img src="https://via.placeholder.com/200x200?text=Vestido+Infantil" alt="Vestido Infantil">
+        <h3>Vestido Floral</h3>
+        <p>R$ 89,90</p>
+        <button>Comprar</button>
+    </div>
+
+    <div class="produto">
+        <img src="https://via.placeholder.com/200x200?text=Conjunto+Menino" alt="Conjunto Menino">
+        <h3>Conjunto Menino</h3>
+        <p>R$ 79,90</p>
+        <button>Comprar</button>
+    </div>
+
+    <div class="produto">
+        <img src="https://via.placeholder.com/200x200?text=Body+Bebê" alt="Body Bebê">
+        <h3>Body Bebê</h3>
+        <p>R$ 49,90</p>
+        <button>Comprar</button>
+    </div>
+</section>
+
+<script>
+    // Função simples ao clicar em "Comprar"
+    const botoes = document.querySelectorAll(".produto button");
+    botoes.forEach(btn => {
+        btn.addEventListener("click", () => {
+            alert("Produto adicionado ao carrinho! 🛒");
+        });
+    });
+</script>
+
+</body>
+</html>
