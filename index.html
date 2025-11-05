@@ -1,11 +1,9 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sarom Kids</title>
-
- <style>
+    <meta charset="UTF-8">
+    <title>Sarom Kids - Loja Infantil</title>
+    <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -54,6 +52,21 @@
             color: #d6336c;
         }
 
+        .hero button {
+            background: #ff6fa8;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background: #d6336c;
+        }
+
         footer {
             margin-top: 50px;
             background: #ff6fa8;
@@ -63,57 +76,43 @@
             font-size: 14px;
         }
     </style>
-
-  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1 class="brand">Sarom <span>Kids</span></h1>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="checkout.html">Carrinho</a>
-        <a href="contato.html">Contato</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h2>Roupas divertidas e confortáveis para crianças</h2>
-          <p>Veja nosso catálogo, escolha o look e finalize seu pedido de forma simples e rápida.</p>
-          <a class="btn" href="catalogo.html">Ver Catálogo</a>
-        </div>
-        <div class="hero-image" aria-hidden="true"></div>
-      </div>
-    </section>
+<header>
+    <h1>Sarom Kids</h1>
+    <p>Moda infantil com carinho e praticidade</p>
+</header>
 
-    <section class="features container">
-      <article class="feature">
-        <h3>Fácil de usar</h3>
-        <p>Navegação simples e visual pensada para clientes em celular.</p>
-      </article>
-      <article class="feature">
-        <h3>Catálogo organizado</h3>
-        <p>Filtros por idade e tipo de roupa (em versões futuras).</p>
-      </article>
-      <article class="feature">
-        <h3>Checkout rápido</h3>
-        <p>Processo de compra direto — sem WhatsApp.</p>
-      </article>
-    </section>
-  </main>
+<nav>
+    <a href="index.html">Início</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="#">Promoções</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+</nav>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© Sarom Kids — Loja Virtual</p>
-      <p>Contato: <a href="https://wa.me/551199999999">WhatsApp</a></p>
-    </div>
-  </footer>
+<section class="hero">
+    <h2>Bem-vindo à Sarom Kids</h2>
+    <p>Veja nossos produtos, escolha suas peças e finalize sua compra com facilidade!</p>
+    <button id="catalogoBtn">Ver Catálogo</button>
+</section>
 
-  <script src="js/script.js"></script>
+<footer>
+    © 2025 - Sarom Kids — Todos os direitos reservados
+</footer>
+
+<script>
+    // Mensagem de boas-vindas ao carregar o site
+    window.onload = function() {
+        alert("Bem-vindo à Sarom Kids! 💖");
+    };
+
+    // Botão que leva ao catálogo
+    document.getElementById("catalogoBtn").addEventListener("click", function() {
+        window.location.href = "catalogo.html";
+    });
+</script>
+
 </body>
 </html>
