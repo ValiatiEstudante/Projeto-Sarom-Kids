@@ -4,22 +4,106 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/imagem.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarom Kids - Loja Infantil</title>
 </head>
 <body>
 
-<header>
-    <img id="sarom" src="SaromLogo.png">
-</header>
+<header></header>
 
-<nav>
-    <a href="index.html">Início</a>
-    <a href="catalogo.html">Catálogo</a>
-    <a href="catalogo.html">Promoções</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="sobre.html">Contato</a>
-    <a href="carrinho.html">Carrinho</a>
+<nav class="navbar">
+
+     <div class="navbar-left">
+        <a href="index.html">
+            <img src="../imagem/SaromLogo.png" alt="Sarom Kids" class="logo">
+        </a>
+        <div class="menu">
+            <a href="index.html">Início</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </div>
+    <div class="acoes">
+        <a href="carrinho.html" class="btn-carrinho">Carrinho</a>
+        <a href="login.html" class="btn-login">Entrar</a>
+    </div>
 </nav>
+
+<section class="carrossel">
+
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+
+    <div class="slides">
+        <div class="slide active" style="background-image: url('banner1.jpg');">
+            <div class="content">
+                <h2>Conjuntos</h2>
+                <p>a partir de <span>R$ 39,99</span></p>
+                <button>Aproveitar</button>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('banner2.jpg');">
+            <div class="content">
+                <h2>Novidades</h2>
+                <p>coleção verão</p>
+                <button>Ver agora</button>
+            </div>
+        </div>
+
+        <div class="slide" style="background-image: url('banner3.jpg');">
+            <div class="content">
+                <h2>Promoções</h2>
+                <p>até <span>30% OFF</span></p>
+                <button>Conferir</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="arrow right" onclick="nextSlide()">❯</button>
+
+    <div class="dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+</section>
+
+<section class="beneficios">
+    <div class="beneficio-item">
+        <span class="icone">🚚</span>
+        <div>
+            <strong>FRETE GRÁTIS</strong>
+            <p>Frete grátis a partir de R$249</p>
+        </div>
+    </div>
+
+    <div class="beneficio-item">
+        <span class="icone">💳</span>
+        <div>
+            <strong>FACILITADO</strong>
+            <p>Parcele em até 6x</p>
+        </div>
+    </div>
+
+    <div class="beneficio-item">
+        <span class="icone">🔒</span>
+        <div>
+            <strong>SEGURO</strong>
+            <p>Site protegido com SSL</p>
+        </div>
+    </div>
+
+    <div class="beneficio-item">
+        <span class="icone">💰</span>
+        <div>
+            <strong>10% CASHBACK</strong>
+            <p>Para uma próxima compra</p>
+        </div>
+    </div>
+</section>
+
+
 
 <section class="hero">
     <h2>Bem-vindo à Sarom Kids</h2>
@@ -32,11 +116,9 @@
     © 2025 - Sarom Kids — Todos os direitos reservados
 </footer>
 
+<script src="../js/carrossel.js"></script>
+<script src="../js/auth.js"></script>
 <script>
-    /*window.onload = function() {
-        alert("Bem-vindo à Sarom Kids!");
-    };*/
-
     document.getElementById("catalogoBtn").addEventListener("click", function() {
         window.location.href = "catalogo.html";
     });

@@ -1,0 +1,39 @@
+#lista-compras {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+.compra {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.compra ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.voltar-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    text-decoration: none;
+    background: #0096b4;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background: #007d95;
+}

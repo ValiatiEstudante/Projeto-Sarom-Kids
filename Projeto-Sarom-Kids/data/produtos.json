@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nome": "Vestido Floral",
+    "preco": 89.90,
+    "precoPromocao": 59.90,
+    "categoria": "feminino",
+    "imagem": "roupa1.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Conjunto Menino",
+    "preco": 79.90,
+    "precoPromocao": 54.90,
+    "categoria": "masculino",
+    "imagem": "roupa2.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "Body Bebê",
+    "preco": 49.90,
+    "precoPromocao": 34.90,
+    "categoria": "feminino",
+    "imagem": "roupa7.jpg"
+  }
+]
